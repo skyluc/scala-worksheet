@@ -32,4 +32,29 @@
     <module>org.scalaide.worksheet.update-site</module>
   </modules>
 
+  <build>
+    <pluginManagement>
+      <plugin>
+        <!-- configuration of the scala compiler -->
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>${scala.plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <jvmArgs>
+            <jvmArg>-Xms512m</jvmArg>
+            <jvmArg>-Xmx1024m</jvmArg>
+          </jvmArgs>
+          <verbose>true</verbose>
+        </configuration>
+      </plugin>
+    </pluginManagement>
+  </build>
+
 </project>
