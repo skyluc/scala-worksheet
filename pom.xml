@@ -52,7 +52,7 @@
             <jvmArg>-Xms512m</jvmArg>
             <jvmArg>-Xmx1024m</jvmArg>
           </jvmArgs>
-          <verbose>true</verbose>
+          <displayCmd>true</displayCmd>
         </configuration>
       </plugin>
     </plugins>
