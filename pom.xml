@@ -34,6 +34,7 @@
 
   <build>
     <pluginManagement>
+    <plugins>
       <plugin>
         <!-- configuration of the scala compiler -->
         <groupId>net.alchim31.maven</groupId>
@@ -54,6 +55,7 @@
           <verbose>true</verbose>
         </configuration>
       </plugin>
+    </plugins>
     </pluginManagement>
   </build>
 
