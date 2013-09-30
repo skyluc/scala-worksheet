@@ -21,6 +21,7 @@
   <properties>
     <tycho.test.encoding>-Dfile.encoding=UTF-8</tycho.test.encoding>
     <tycho.test.jvmArgs>-Xmx800m -XX:MaxPermSize=256m -Dsdtcore.headless ${tycho.test.encoding} ${tycho.test.weaving} ${tycho.test.OSspecific}</tycho.test.jvmArgs>
+    <scala.plugin.version>3.1.5</scala.plugin.version>
   </properties>
 
   <modules>
