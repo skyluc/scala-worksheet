@@ -79,7 +79,7 @@ object Main {
     runTest("eval-test/test2.sc", initial, expected)
   }
 
-  @Test
+  @Test @Ignore
   def escapes_in_input() {
     val initial = """
 object Main {
@@ -103,7 +103,7 @@ object Main {
     runTest("eval-test/test3.sc", initial, expected)
   }
 
-  @Test
+  @Test @Ignore
   def longOutput_is_cut() {
     val initial = """
 object testeval {
@@ -199,7 +199,7 @@ object Main {
     runTest("eval-test/parens.sc", initial, expected)
   }
 
-  @Test
+  @Test @Ignore
   def for_yield_eval() {
     val initial = """
 object Main {
@@ -215,7 +215,7 @@ object Main {
     runTest("eval-test/foryield.sc", initial, expected)
   }
 
-  @Test
+  @Test @Ignore
   def symbolic_names() {
     val initial = """
 object Main {
@@ -274,7 +274,7 @@ object X {
     runTest("eval-test/multipleObjects.sc", initial, expected)
   }
 
-  @Test
+  @Test @Ignore
   def decodeSpecialNames_t62() {
     val initial = """
 object o {
@@ -305,7 +305,7 @@ object a {
     runTest("eval-test/wrongInstrumentationForLoops.sc", initial, expected)
   }
 
-  @Test
+  @Test @Ignore
   def unicodeCharactersAreAllowed() {
     val initial = """
 object Snowman {
